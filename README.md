@@ -1,1 +1,8 @@
-https://www.figma.com/file/uQUtfM8IlUxZ3za6qnB67I/%F0%9F%94%B5-%D0%A1%D0%B0%D0%B9%D1%82---%F0%9F%90%9F-%D0%92%D0%BB%D0%B0%D0%B4---22.10.06---%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%BE%D1%80-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%E2%80%A2?node-id=0%3A1&t=2kz6MXvyL7H3cZFd-0
+# install
+### npm install
+
+# run
+### npx mix watch
+#
+### dist/app.css - libs
+### dist/style.css - pages style

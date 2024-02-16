@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>каталог</title>
+    <link rel="stylesheet" type="text/css" href="dist/app.css">
+    <link rel="stylesheet" type="text/css" href="dist/catalogOne.css">
+</head>
+
+<body>
+    <!----------------------------------------- header -------------------------------------->
+    <div class="header header-html">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid" style="z-index: 99;">
+                <a class="navbar-brand text-dark fs-2 logo" href="./index.html">
+                    <h1 class="logoText">ДОКУМЕНТ.</h1>
+                    <p class="fw-lighter align-bottom fs-6 logo-smoll-text">юридические документы для бизнеса</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto  mb-lg-0 ">
+      
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark"  href="./catalogOne.html">Наши шаблоны
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark"  href="faq.html">Как это работает</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" >Консультация юриста</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="./tariff.html">Тарифы</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="./aboutUs.html">Узнать больше</a>
+                        </li>
+                        <li>
+      
+                            <div class="d-flex btn-group">
+                                <button type="button"
+                                    class="btn btn-light rounded-pill border border-1 transparentButton user "><img
+                                        src="./images/user.svg" alt="user" />
+                                    <span class="header-btn-p">Кабинет</span>
+                                </button>
+      
+      
+      
+                                <!-- <button type="button" class="btn btn-dark rounded-pill doc1 "><img
+                                        src="./images/документ.svg" alt="doc1" />
+                                    <span class="header-btn-p">Документы</span>
+                                </button> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid" style="z-index: 99;">
+                <a class="navbar-brand text-dark fs-2 logo" href="./index.html">
+                    <h1 class="logoText">ДОКУМЕНТ.</h1>
+                    <p class="fw-lighter align-bottom fs-6 logo-smoll-text">юридические документы для бизнеса</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto  mb-lg-0 ">
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="#">Консультация юриста</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="aboutUs.html">О нас</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="aboutUs.html">Команда</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="./faq.html">Как это работает</a>
+                        </li>
+                        <li>
+
+                            <div class="d-flex btn-group">
+                                <button type="button"
+                                    class="btn btn-light rounded-pill border border-1 transparentButton user "
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./images/user.svg"
+                                        alt="user" />
+                                    <span class="header-btn-p">Кабинет</span>
+                                </button>
+                                <button type="button" class="btn btn-dark rounded-pill doc1 "><img
+                                        src="./images/документ.svg" alt="doc1" />
+                                    <span class="header-btn-p">Документы</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+
+
+        <div class="container my-container" style="margin-top: 75px; padding-bottom: 47px;">
+
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="breadcrumb-a" href="./index.html">Главная</a></li>
+                    <li class="breadcrumb-item active text-muted breadcrumb-p" aria-current="page"
+                        style="align-items: center;display: flex;">
+                        Каталог документов
+                    </li>
+                </ol>
+            </nav>
+            <h1 class="orders-h1">Каталог документов</h1>
+            <p>Получите готовый к подписанию договор, доверенность, исковое заявление и другие документы <br> на 100%
+                соответствующие актуальному законодательству РФ</p>
+
+            <!-- <ul class="nav nav-pills nav-orders " id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="  btn btn-outline-light rounded-pill border border-1  btn-catalogOne3" href="./index.html"
+                        role="button">
+                        <p class="btn-catalogOne3-p">
+
+                            Малый, средний бизнес и стартапы</p>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="  btn btn-outline-light rounded-pill border border-1  btn-catalogOne3" href="./index.html"
+                        role="button">
+                        <p class="btn-catalogOne3-p">
+
+                            Исковые заявления</p>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="  btn btn-outline-light rounded-pill border border-1  btn-catalogOne3" href="./index.html"
+                        role="button">
+                        <p class="btn-catalogOne3-p">
+
+                            Другие документы</p>
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="  btn btn-outline-light rounded-pill border border-1  btn-catalogOne3" href="./index.html"
+                        role="button">
+                        <p class="btn-catalogOne3-p">
+
+                            Другие документы</p>
+                    </a>
+                </li>
+                <li class="nav-item ms-auto" role="presentation">
+                    <a class="  btn btn-outline-light rounded-pill border border-1  btn-catalogOne3" href="./index.html"
+                        role="button">
+                        <p class="btn-catalogOne3-p">
+
+                            Выйти</p>
+                    </a>
+
+                     <button class="  btn btn-outline-light rounded-pill border border-1 transparentButton btn-orders3"
+                        id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                        aria-controls="pills-home" aria-selected="true">
+
+                        <p class="header-btn-p">
+                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0142 1.91699C13.3933 1.91699 15.3337 3.82408 15.3337 6.17199V10.7624H9.48337C9.0641 10.7624 8.73258 11.0882 8.73258 11.5003C8.73258 11.9028 9.0641 12.2382 9.48337 12.2382H15.3337V16.8191C15.3337 19.167 13.3933 21.0837 10.9947 21.0837H6.24621C3.85734 21.0837 1.91699 19.1766 1.91699 16.8287V6.18158C1.91699 3.82408 3.86709 1.91699 6.25596 1.91699H11.0142ZM17.768 8.19427C18.0555 7.89718 18.5251 7.89718 18.8126 8.18468L21.6109 10.9734C21.7547 11.1172 21.8314 11.2993 21.8314 11.5005C21.8314 11.6922 21.7547 11.8839 21.6109 12.018L18.8126 14.8068C18.6689 14.9505 18.4772 15.0272 18.2951 15.0272C18.1034 15.0272 17.9118 14.9505 17.768 14.8068C17.4805 14.5193 17.4805 14.0497 17.768 13.7622L19.3014 12.2384H15.3339V10.7626H19.3014L17.768 9.23885C17.4805 8.95135 17.4805 8.48177 17.768 8.19427Z"
+                                    fill="black" />
+                            </svg> 
+                            Выйти</p>
+                    </button> 
+                </li>
+            </ul> -->
+
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="   btn btn-light rounded-pill border border-1  btn-catalogOne3" 
+                        id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                        aria-controls="pills-home" aria-selected="true">Малый, средний бизнес и
+                        стартапы</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="  btn btn-light rounded-pill border border-1  btn-catalogOne3" 
+                        id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
+                        role="tab" aria-controls="pills-profile" aria-selected="false">Исковые
+                        заявления</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="\ btn btn-light rounded-pill border border-1  btn-catalogOne3"
+                        id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
+                        role="tab" aria-controls="pills-contact" aria-selected="false">Другие
+                        документы</button>
+                </li>
+               
+                <li class="vr">
+
+                    <!-- <div class='vr'></div> -->
+                </li>
+                
+
+                <li class="nav-item" role="presentation">
+                    <!-- <button class="nav-link   btn btn-outline-light rounded-pill border border-1  btn-catalogOne3"
+                        href="./index.html" id="pills-disabled-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled"
+                        aria-selected="false" disabled>
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.5025 3.18502C17.4864 3.30767 18.2082 4.21705 18.2082 5.2788V20.125L11.4998 16.5316L4.7915 20.125V5.2788C4.7915 4.21705 5.51243 3.30767 6.49721 3.18502C9.82114 2.77166 13.1785 2.77166 16.5025 3.18502Z" fill="black"/>
+                            </svg>
+                        Мои документы
+                    </button> -->
+                    <button class=" btn btn-light rounded-pill border border-1  btn-catalogOne3" 
+                        id="pills-vvv-tab" data-bs-toggle="pill" data-bs-target="#pills-vvv" type="button" role="tab"
+                        aria-controls="pills-contact" aria-selected="false">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.5025 3.18502C17.4864 3.30767 18.2082 4.21705 18.2082 5.2788V20.125L11.4998 16.5316L4.7915 20.125V5.2788C4.7915 4.21705 5.51243 3.30767 6.49721 3.18502C9.82114 2.77166 13.1785 2.77166 16.5025 3.18502Z"
+                                fill="black" />
+                        </svg>
+                        Мои документы
+                    </button>
+                </li>
+                <li class="nav-item ms-auto" role="presentation">
+                    <div class="svgs-catalog">
+                        <a href=""><svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.6539 2.875C19.9929 2.875 21.0832 3.77941 21.0832 4.88907V7.57005C21.0832 8.68679 19.9929 9.58333 18.6539 9.58333H4.3458C2.99726 9.58333 1.9165 8.68679 1.9165 7.57005V4.88907C1.9165 3.77941 2.99726 2.875 4.3458 2.875H18.6539Z"
+                                    fill="#C5CCD3" />
+                                <path
+                                    d="M18.6539 13.417C19.9929 13.417 21.0832 14.3214 21.0832 15.4311V18.112C21.0832 19.2288 19.9929 20.1253 18.6539 20.1253H4.3458C2.99726 20.1253 1.9165 19.2288 1.9165 18.112V15.4311C1.9165 14.3214 2.99726 13.417 4.3458 13.417H18.6539Z"
+                                    fill="#C5CCD3" />
+                            </svg></a>
+                        <a href="">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.58984 12.9088C8.94109 12.9088 10.024 14.0022 10.024 15.3631V18.63C10.024 19.9813 8.94109 21.0834 7.58984 21.0834H4.35067C3.009 21.0834 1.9165 19.9813 1.9165 18.63V15.3631C1.9165 14.0022 3.009 12.9088 4.35067 12.9088H7.58984ZM18.6491 12.9088C19.9908 12.9088 21.0833 14.0022 21.0833 15.3631V18.63C21.0833 19.9813 19.9908 21.0834 18.6491 21.0834H15.4099C14.0587 21.0834 12.9758 19.9813 12.9758 18.63V15.3631C12.9758 14.0022 14.0587 12.9088 15.4099 12.9088H18.6491ZM7.58984 1.91699C8.94109 1.91699 10.024 3.01908 10.024 4.37128V7.63824C10.024 8.99908 8.94109 10.0916 7.58984 10.0916H4.35067C3.009 10.0916 1.9165 8.99908 1.9165 7.63824V4.37128C1.9165 3.01908 3.009 1.91699 4.35067 1.91699H7.58984ZM18.6491 1.91699C19.9908 1.91699 21.0833 3.01908 21.0833 4.37128V7.63824C21.0833 8.99908 19.9908 10.0916 18.6491 10.0916H15.4099C14.0587 10.0916 12.9758 8.99908 12.9758 7.63824V4.37128C12.9758 3.01908 14.0587 1.91699 15.4099 1.91699H18.6491Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+
+
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0"></div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0"></div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0"></div>
+                <div class="tab-pane fade" id="pills-vvv" role="tabpanel" aria-labelledby="pills-vvv-tab" tabindex="0">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="position-relative">
+            <input type="text" placeholder=" Поиск документов " aria-label="First name"
+                class="input-catalog  mb-lg-0 mb-2" style="padding-left: 47px;" />
+            <svg class="position-absolute " style="top: -6px;left:25px; z-index: 1;" width="18" height="19"
+                viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M8.25 14.75C11.5637 14.75 14.25 12.0637 14.25 8.75C14.25 5.43629 11.5637 2.75 8.25 2.75C4.93629 2.75 2.25 5.43629 2.25 8.75C2.25 12.0637 4.93629 14.75 8.25 14.75Z"
+                    stroke="#77818A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15.75 16.2498L12.4875 12.9873" stroke="#77818A" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+
+    </div>
+
+    <!----------------------------------------- /header/ ------------------------------------>
+
+
+
+    <main style="background-color: #F9FAFA;">
+        <div class="container">
+            <div class="btn-group-catalog">
+                <button type="button" class="btn btn-catalog ">Акционерные общества</button>
+                <button type="button" class="btn btn-catalog ">Общества с ограниченной ответственностью</button>
+                <button type="button" class="btn btn-catalog ">ИП и малый бмзнес</button>
+                <button type="button" class="btn btn-catalog ">Стартапы</button>
+            </div>
+            <div class="docPL-1">
+                <a class="catalog-a" href="">Мои документы
+                    <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.6364 8.1364C20.9879 7.78492 20.9879 7.21508 20.6364 6.8636L14.9088 1.13604C14.5574 0.784567 13.9875 0.784567 13.636 1.13604C13.2846 1.48751 13.2846 2.05736 13.636 2.40883L18.7272 7.5L13.636 12.5912C13.2846 12.9426 13.2846 13.5125 13.636 13.864C13.9875 14.2154 14.5574 14.2154 14.9088 13.864L20.6364 8.1364ZM0 8.4H20V6.6H0V8.4Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <div class="row row-colss" style="gap: 29px;">
+                    <div class="dokPL-div-1 ">
+                        <div class="cont-dokPL-div-1">
+                            <div class="div-svgs">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.0901 3.87741C21.2879 4.02673 22.1666 5.13381 22.1666 6.42636V24.5L13.9999 20.1254L5.83325 24.5V6.42636C5.83325 5.13381 6.7109 4.02673 7.90976 3.87741C11.9563 3.3742 16.0436 3.3742 20.0901 3.87741Z"
+                                        fill="#A9B0B8" />
+                                </svg>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.8682 4.31557L21.589 5.68258C22.2947 6.2344 22.7652 6.9618 22.9261 7.72682C23.1118 8.56835 22.9137 9.39482 22.3566 10.1097L13.2725 22.1992C12.8021 22.8012 12.1088 23.1398 11.366 23.1524L6.11383 24.3692C5.89098 24.3692 5.70528 24.2187 5.65576 24.0055L5.89392 18.8131C5.73297 18.0731 5.89392 17.3081 6.36436 16.7186L12.4649 8.4793C12.5887 8.32881 12.8115 8.30498 12.9601 8.4166L16.018 10.8496C16.216 11.0127 16.4884 11.1004 16.7732 11.0628C17.3798 10.9876 17.7883 10.4358 17.7264 9.84631C17.6893 9.54532 17.5407 9.29449 17.3426 9.10637C17.2807 9.0562 14.3714 6.72351 14.3714 6.72351C14.1857 6.57302 14.1486 6.29711 14.2971 6.11024L15.4485 4.61657C16.5132 3.24956 18.3702 3.12415 19.8682 4.31557Z"
+                                        fill="#A9B0B8" />
+                                </svg>
+                            </div>
+                            <p class="dokPL-div1-p1">Другие документы</p>
+                            <p class="dokPL-div1-p2">Договор аренды <br> земельного участка <br> сельскохозяйственного
+                                <br> назначения
+                            </p>
+                            <div class="btn-resume">
+                                <button class="  btn-Resume1" type="button" style="border: none;">
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.6106 3.89081L16.9627 4.96489C17.5172 5.39846 17.8868 5.96999 18.0133 6.57107C18.1592 7.23227 18.0036 7.88165 17.5658 8.44332L10.4283 17.9422C10.0587 18.4152 9.51394 18.6813 8.9303 18.6911L4.80363 19.6472C4.62854 19.6472 4.48263 19.529 4.44373 19.3615L4.63085 15.2817C4.50439 14.7003 4.63085 14.0992 5.00048 13.6361L9.79373 7.16231C9.891 7.04406 10.0661 7.02534 10.1828 7.11304L12.5855 9.0247C12.7411 9.1528 12.9551 9.22178 13.1788 9.19222C13.6555 9.13309 13.9765 8.69952 13.9278 8.23639C13.8986 7.99989 13.7819 7.80281 13.6263 7.65501C13.5776 7.61559 11.2917 5.78276 11.2917 5.78276C11.1458 5.66451 11.1166 5.44773 11.2334 5.3009L12.138 4.1273C12.9745 3.05323 14.4336 2.95469 15.6106 3.89081Z"
+                                            fill="black" />
+                                    </svg>
+                                    Вернуться
+                                </button>
+                                <button class="btn   btn-Resume1-1" type="button">
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.125 4.60479V4.81287C16.3157 4.92176 17.5016 5.07833 18.6798 5.2822C18.7688 5.29761 18.8539 5.33039 18.9301 5.37867C19.0064 5.42695 19.0725 5.48978 19.1245 5.56358C19.1765 5.63738 19.2135 5.7207 19.2333 5.80878C19.2531 5.89687 19.2553 5.98799 19.2399 6.07695C19.2245 6.16591 19.1917 6.25097 19.1435 6.32726C19.0952 6.40355 19.0323 6.46958 18.9585 6.52159C18.8847 6.5736 18.8014 6.61056 18.7133 6.63037C18.6253 6.65018 18.5341 6.65244 18.4452 6.63704L18.2536 6.60495L17.3323 18.5858C17.2792 19.2766 16.9673 19.9218 16.459 20.3926C15.9507 20.8634 15.2834 21.1249 14.5906 21.125H7.41034C6.71752 21.1249 6.05024 20.8634 5.54192 20.3926C5.0336 19.9218 4.72171 19.2766 4.66859 18.5858L3.74642 6.60495L3.55484 6.63704C3.46588 6.65244 3.37476 6.65018 3.28667 6.63037C3.19859 6.61056 3.11527 6.5736 3.04147 6.52159C2.89242 6.41656 2.79121 6.25661 2.76009 6.07695C2.72897 5.89729 2.7705 5.71262 2.87553 5.56358C2.98057 5.41454 3.14051 5.31332 3.32017 5.2822C4.49833 5.07808 5.68424 4.92151 6.87501 4.81287V4.60479C6.87501 3.17112 7.98692 1.94645 9.45634 1.8997C10.4855 1.86677 11.5154 1.86677 12.5446 1.8997C14.014 1.94645 15.125 3.17112 15.125 4.60479ZM9.50034 3.27379C10.5002 3.24181 11.5008 3.24181 12.5006 3.27379C13.1908 3.29579 13.75 3.87695 13.75 4.60479V4.70837C11.9184 4.59713 10.0817 4.59713 8.25001 4.70837V4.60479C8.25001 3.87695 8.80826 3.29579 9.50034 3.27379ZM9.17492 8.72337C9.17143 8.63308 9.15019 8.54437 9.11242 8.4623C9.07464 8.38022 9.02107 8.30639 8.95476 8.24502C8.88845 8.18365 8.81071 8.13594 8.72596 8.10461C8.64121 8.07329 8.55112 8.05896 8.46084 8.06245C8.37055 8.06594 8.28184 8.08718 8.19977 8.12496C8.11769 8.16273 8.04386 8.2163 7.98249 8.28261C7.92112 8.34892 7.87341 8.42667 7.84208 8.51142C7.81076 8.59616 7.79643 8.68625 7.79992 8.77654L8.11801 17.0265C8.12506 17.2087 8.2042 17.3807 8.33803 17.5046C8.4043 17.5659 8.482 17.6136 8.56669 17.6449C8.65138 17.6762 8.74141 17.6905 8.83163 17.687C8.92185 17.6835 9.01051 17.6623 9.09253 17.6245C9.17455 17.5868 9.24833 17.5332 9.30966 17.467C9.37099 17.4007 9.41866 17.323 9.44996 17.2383C9.48127 17.1536 9.49558 17.0636 9.49209 16.9734L9.17492 8.72337ZM14.1983 8.77654C14.205 8.68452 14.1931 8.59209 14.1634 8.50475C14.1336 8.41742 14.0866 8.33697 14.0251 8.26819C13.9636 8.19941 13.8889 8.14372 13.8054 8.10442C13.7219 8.06513 13.6314 8.04304 13.5392 8.03947C13.447 8.0359 13.355 8.05092 13.2688 8.08365C13.1825 8.11637 13.1037 8.16612 13.0371 8.22994C12.9704 8.29375 12.9173 8.37033 12.8809 8.4551C12.8445 8.53987 12.8255 8.63111 12.8251 8.72337L12.507 16.9734C12.5 17.1557 12.5656 17.3334 12.6896 17.4673C12.8135 17.6012 12.9856 17.6804 13.1679 17.6875C13.3503 17.6945 13.5279 17.6288 13.6618 17.5049C13.7958 17.3809 13.875 17.2089 13.882 17.0265L14.1983 8.77654V8.77654Z"
+                                            fill="black" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="dokPL-div-2  ">
+                        <div class="cont-dokPL-div-2">
+                            <div class="div-svgs2">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.0901 3.87741C21.2879 4.02673 22.1666 5.13381 22.1666 6.42636V24.5L13.9999 20.1254L5.83325 24.5V6.42636C5.83325 5.13381 6.7109 4.02673 7.90976 3.87741C11.9563 3.3742 16.0436 3.3742 20.0901 3.87741Z"
+                                        fill="#A9B0B8" />
+                                </svg>
+                            </div>
+                            <p class="dokPL-div2-p1">Малый, средний бизнес и стартапы</p>
+                            <p class="dokPL-div2-p2">Акт приема-передачи имущества в безвозмездное пользование</p>
+                            <div class="btn-resume">
+                                <button class="btn btn-primary btn-Resume2" type="button">
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 14.25C11.7293 14.25 12.4288 13.9603 12.9445 13.4445C13.4603 12.9288 13.75 12.2293 13.75 11.5C13.75 10.7707 13.4603 10.0712 12.9445 9.55546C12.4288 9.03973 11.7293 8.75 11 8.75C10.2707 8.75 9.57118 9.03973 9.05546 9.55546C8.53973 10.0712 8.25 10.7707 8.25 11.5C8.25 12.2293 8.53973 12.9288 9.05546 13.4445C9.57118 13.9603 10.2707 14.25 11 14.25V14.25Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.21274 10.9931C2.57674 6.89467 6.44232 3.9375 11.0009 3.9375C15.5567 3.9375 19.4205 6.89192 20.7863 10.9867C20.8963 11.3185 20.8963 11.676 20.7863 12.0069C19.4232 16.1053 15.5567 19.0625 10.9991 19.0625C6.44324 19.0625 2.57857 16.1081 1.21365 12.0133C1.10342 11.6822 1.10342 11.3242 1.21365 10.9931H1.21274ZM15.8125 11.5C15.8125 12.7764 15.3055 14.0004 14.4029 14.903C13.5004 15.8055 12.2763 16.3125 11 16.3125C9.72363 16.3125 8.49956 15.8055 7.59704 14.903C6.69452 14.0004 6.18749 12.7764 6.18749 11.5C6.18749 10.2236 6.69452 8.99957 7.59704 8.09705C8.49956 7.19453 9.72363 6.6875 11 6.6875C12.2763 6.6875 13.5004 7.19453 14.4029 8.09705C15.3055 8.99957 15.8125 10.2236 15.8125 11.5V11.5Z"
+                                            fill="white" />
+                                    </svg>
+                                    Ознакомиться
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dokPL-div-3  ">
+                        <div class="cont-dokPL-div-3">
+                            <div class="div-svgs3">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.0901 3.87741C21.2879 4.02673 22.1666 5.13381 22.1666 6.42636V24.5L13.9999 20.1254L5.83325 24.5V6.42636C5.83325 5.13381 6.7109 4.02673 7.90976 3.87741C11.9563 3.3742 16.0436 3.3742 20.0901 3.87741Z"
+                                        fill="#A9B0B8" />
+                                </svg>
+                            </div>
+                            <p class="dokPL-div3-p1">Исковые заявления</p>
+                            <p class="dokPL-div3-p2">Акт приема-передачи имущества в безвозмездное пользование</p>
+                            <div class="btn-resume">
+                                <button class="btn btn-primary btn-Resume2" type="button">
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 14.25C11.7293 14.25 12.4288 13.9603 12.9445 13.4445C13.4603 12.9288 13.75 12.2293 13.75 11.5C13.75 10.7707 13.4603 10.0712 12.9445 9.55546C12.4288 9.03973 11.7293 8.75 11 8.75C10.2707 8.75 9.57118 9.03973 9.05546 9.55546C8.53973 10.0712 8.25 10.7707 8.25 11.5C8.25 12.2293 8.53973 12.9288 9.05546 13.4445C9.57118 13.9603 10.2707 14.25 11 14.25V14.25Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.21274 10.9931C2.57674 6.89467 6.44232 3.9375 11.0009 3.9375C15.5567 3.9375 19.4205 6.89192 20.7863 10.9867C20.8963 11.3185 20.8963 11.676 20.7863 12.0069C19.4232 16.1053 15.5567 19.0625 10.9991 19.0625C6.44324 19.0625 2.57857 16.1081 1.21365 12.0133C1.10342 11.6822 1.10342 11.3242 1.21365 10.9931H1.21274ZM15.8125 11.5C15.8125 12.7764 15.3055 14.0004 14.4029 14.903C13.5004 15.8055 12.2763 16.3125 11 16.3125C9.72363 16.3125 8.49956 15.8055 7.59704 14.903C6.69452 14.0004 6.18749 12.7764 6.18749 11.5C6.18749 10.2236 6.69452 8.99957 7.59704 8.09705C8.49956 7.19453 9.72363 6.6875 11 6.6875C12.2763 6.6875 13.5004 7.19453 14.4029 8.09705C15.3055 8.99957 15.8125 10.2236 15.8125 11.5V11.5Z"
+                                            fill="white" />
+                                    </svg>
+                                    Ознакомиться
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dokPL-div-4  ">
+                        <div class="cont-dokPL-div-4">
+                            <div class="div-svgs4">
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.0901 3.87741C21.2879 4.02673 22.1666 5.13381 22.1666 6.42636V24.5L13.9999 20.1254L5.83325 24.5V6.42636C5.83325 5.13381 6.7109 4.02673 7.90976 3.87741C11.9563 3.3742 16.0436 3.3742 20.0901 3.87741Z"
+                                        fill="#A9B0B8" />
+                                </svg>
+                            </div>
+                            <p class="dokPL-div4-p1">Другие документы</p>
+                            <p class="dokPL-div4-p2">Договор аренды земельного участка сельскохозяйственного назначения
+                            </p>
+                            <div class="btn-resume">
+                                <button class="btn btn-primary btn-Resume2" type="button">
+                                    <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 14.25C11.7293 14.25 12.4288 13.9603 12.9445 13.4445C13.4603 12.9288 13.75 12.2293 13.75 11.5C13.75 10.7707 13.4603 10.0712 12.9445 9.55546C12.4288 9.03973 11.7293 8.75 11 8.75C10.2707 8.75 9.57118 9.03973 9.05546 9.55546C8.53973 10.0712 8.25 10.7707 8.25 11.5C8.25 12.2293 8.53973 12.9288 9.05546 13.4445C9.57118 13.9603 10.2707 14.25 11 14.25V14.25Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.21274 10.9931C2.57674 6.89467 6.44232 3.9375 11.0009 3.9375C15.5567 3.9375 19.4205 6.89192 20.7863 10.9867C20.8963 11.3185 20.8963 11.676 20.7863 12.0069C19.4232 16.1053 15.5567 19.0625 10.9991 19.0625C6.44324 19.0625 2.57857 16.1081 1.21365 12.0133C1.10342 11.6822 1.10342 11.3242 1.21365 10.9931H1.21274ZM15.8125 11.5C15.8125 12.7764 15.3055 14.0004 14.4029 14.903C13.5004 15.8055 12.2763 16.3125 11 16.3125C9.72363 16.3125 8.49956 15.8055 7.59704 14.903C6.69452 14.0004 6.18749 12.7764 6.18749 11.5C6.18749 10.2236 6.69452 8.99957 7.59704 8.09705C8.49956 7.19453 9.72363 6.6875 11 6.6875C12.2763 6.6875 13.5004 7.19453 14.4029 8.09705C15.3055 8.99957 15.8125 10.2236 15.8125 11.5V11.5Z"
+                                            fill="white" />
+                                    </svg>
+                                    Ознакомиться
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="container">
+                <div class="docPL-2">
+                    <a class="catalog-a" href="">Мои документы
+                        <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.6364 8.1364C20.9879 7.78492 20.9879 7.21508 20.6364 6.8636L14.9088 1.13604C14.5574 0.784567 13.9875 0.784567 13.636 1.13604C13.2846 1.48751 13.2846 2.05736 13.636 2.40883L18.7272 7.5L13.636 12.5912C13.2846 12.9426 13.2846 13.5125 13.636 13.864C13.9875 14.2154 14.5574 14.2154 14.9088 13.864L20.6364 8.1364ZM0 8.4H20V6.6H0V8.4Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                    <div class="d-flex" style="gap: 16px; flex-wrap: wrap;">
+                        <div>
+                            <div class="catalog-docss catalog-docss1 d-flex ">
+                                <div>
+                                    <img src="./images/orders/11.svg" alt="">
+                                </div>
+
+                                <div class="position-relative d-flex align-items-center rrr-div-card">
+                                    <div class="ddd ">
+                                        <p class="catalog-docss-p1">Малый, средний бизнес и стартапы </p>
+                                        <p class="catalog-docss-p2">Договор аренды земельного участка сельско <br>
+                                            хозяйственного
+                                            назначения
+                                        </p>
+                                    </div>
+
+                                    <div class="Resume">
+                                        <button class="btn  btn-Resume1" type="button">
+                                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.6106 3.89081L16.9627 4.96489C17.5172 5.39846 17.8868 5.96999 18.0133 6.57107C18.1592 7.23227 18.0036 7.88165 17.5658 8.44332L10.4283 17.9422C10.0587 18.4152 9.51394 18.6813 8.9303 18.6911L4.80363 19.6472C4.62854 19.6472 4.48263 19.529 4.44373 19.3615L4.63085 15.2817C4.50439 14.7003 4.63085 14.0992 5.00048 13.6361L9.79373 7.16231C9.891 7.04406 10.0661 7.02534 10.1828 7.11304L12.5855 9.0247C12.7411 9.1528 12.9551 9.22178 13.1788 9.19222C13.6555 9.13309 13.9765 8.69952 13.9278 8.23639C13.8986 7.99989 13.7819 7.80281 13.6263 7.65501C13.5776 7.61559 11.2917 5.78276 11.2917 5.78276C11.1458 5.66451 11.1166 5.44773 11.2334 5.3009L12.138 4.1273C12.9745 3.05323 14.4336 2.95469 15.6106 3.89081Z"
+                                                    fill="black" />
+                                            </svg>
+                                            Вернуться
+                                        </button>
+                                        <button class="btn  btn-Resume1-1" type="button">
+                                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M15.125 4.60479V4.81287C16.3157 4.92176 17.5016 5.07833 18.6798 5.2822C18.7688 5.29761 18.8539 5.33039 18.9301 5.37867C19.0064 5.42695 19.0725 5.48978 19.1245 5.56358C19.1765 5.63738 19.2135 5.7207 19.2333 5.80878C19.2531 5.89687 19.2553 5.98799 19.2399 6.07695C19.2245 6.16591 19.1917 6.25097 19.1435 6.32726C19.0952 6.40355 19.0323 6.46958 18.9585 6.52159C18.8847 6.5736 18.8014 6.61056 18.7133 6.63037C18.6253 6.65018 18.5341 6.65244 18.4452 6.63704L18.2536 6.60495L17.3323 18.5858C17.2792 19.2766 16.9673 19.9218 16.459 20.3926C15.9507 20.8634 15.2834 21.1249 14.5906 21.125H7.41034C6.71752 21.1249 6.05024 20.8634 5.54192 20.3926C5.0336 19.9218 4.72171 19.2766 4.66859 18.5858L3.74642 6.60495L3.55484 6.63704C3.46588 6.65244 3.37476 6.65018 3.28667 6.63037C3.19859 6.61056 3.11527 6.5736 3.04147 6.52159C2.89242 6.41656 2.79121 6.25661 2.76009 6.07695C2.72897 5.89729 2.7705 5.71262 2.87553 5.56358C2.98057 5.41454 3.14051 5.31332 3.32017 5.2822C4.49833 5.07808 5.68424 4.92151 6.87501 4.81287V4.60479C6.87501 3.17112 7.98692 1.94645 9.45634 1.8997C10.4855 1.86677 11.5154 1.86677 12.5446 1.8997C14.014 1.94645 15.125 3.17112 15.125 4.60479ZM9.50034 3.27379C10.5002 3.24181 11.5008 3.24181 12.5006 3.27379C13.1908 3.29579 13.75 3.87695 13.75 4.60479V4.70837C11.9184 4.59713 10.0817 4.59713 8.25001 4.70837V4.60479C8.25001 3.87695 8.80826 3.29579 9.50034 3.27379ZM9.17492 8.72337C9.17143 8.63308 9.15019 8.54437 9.11242 8.4623C9.07464 8.38022 9.02107 8.30639 8.95476 8.24502C8.88845 8.18365 8.81071 8.13594 8.72596 8.10461C8.64121 8.07329 8.55112 8.05896 8.46084 8.06245C8.37055 8.06594 8.28184 8.08718 8.19977 8.12496C8.11769 8.16273 8.04386 8.2163 7.98249 8.28261C7.92112 8.34892 7.87341 8.42667 7.84208 8.51142C7.81076 8.59616 7.79643 8.68625 7.79992 8.77654L8.11801 17.0265C8.12506 17.2087 8.2042 17.3807 8.33803 17.5046C8.4043 17.5659 8.482 17.6136 8.56669 17.6449C8.65138 17.6762 8.74141 17.6905 8.83163 17.687C8.92185 17.6835 9.01051 17.6623 9.09253 17.6245C9.17455 17.5868 9.24833 17.5332 9.30966 17.467C9.37099 17.4007 9.41866 17.323 9.44996 17.2383C9.48127 17.1536 9.49558 17.0636 9.49209 16.9734L9.17492 8.72337ZM14.1983 8.77654C14.205 8.68452 14.1931 8.59209 14.1634 8.50475C14.1336 8.41742 14.0866 8.33697 14.0251 8.26819C13.9636 8.19941 13.8889 8.14372 13.8054 8.10442C13.7219 8.06513 13.6314 8.04304 13.5392 8.03947C13.447 8.0359 13.355 8.05092 13.2688 8.08365C13.1825 8.11637 13.1037 8.16612 13.0371 8.22994C12.9704 8.29375 12.9173 8.37033 12.8809 8.4551C12.8445 8.53987 12.8255 8.63111 12.8251 8.72337L12.507 16.9734C12.5 17.1557 12.5656 17.3334 12.6896 17.4673C12.8135 17.6012 12.9856 17.6804 13.1679 17.6875C13.3503 17.6945 13.5279 17.6288 13.6618 17.5049C13.7958 17.3809 13.875 17.2089 13.882 17.0265L14.1983 8.77654V8.77654Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="catalog-docss-svg">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.0901 3.87741C21.2879 4.02673 22.1666 5.13381 22.1666 6.42636V24.5L13.9999 20.1254L5.83325 24.5V6.42636C5.83325 5.13381 6.7109 4.02673 7.90976 3.87741C11.9563 3.3742 16.0436 3.3742 20.0901 3.87741Z"
+                                            fill="#A9B0B8" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="catalog-docss catalog-docss1 d-flex ">
+                                <div>
+                                    <img src="./images/orders/ДокПлитка-4.svg" alt="">
+                                </div>
+
+
+                                <div class="position-relative d-flex align-items-center rrr-div-card">
+                                    <div class="ddd ">
+                                        <p class="catalog-docss-p1">Малый, средний бизнес и стартапы </p>
+                                        <p class="catalog-docss-p2">Договор аренды земельного участка сельско <br>
+                                            хозяйственного
+                                            назначения
+                                        </p>
+                                    </div>
+                                    <div class="Resume1">
+                                        <button class="btn btn-primary btn-Resume2" type="button">
+                                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11 14.25C11.7293 14.25 12.4288 13.9603 12.9445 13.4445C13.4603 12.9288 13.75 12.2293 13.75 11.5C13.75 10.7707 13.4603 10.0712 12.9445 9.55546C12.4288 9.03973 11.7293 8.75 11 8.75C10.2707 8.75 9.57118 9.03973 9.05546 9.55546C8.53973 10.0712 8.25 10.7707 8.25 11.5C8.25 12.2293 8.53973 12.9288 9.05546 13.4445C9.57118 13.9603 10.2707 14.25 11 14.25V14.25Z"
+                                                    fill="white" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1.21274 10.9931C2.57674 6.89467 6.44232 3.9375 11.0009 3.9375C15.5567 3.9375 19.4205 6.89192 20.7863 10.9867C20.8963 11.3185 20.8963 11.676 20.7863 12.0069C19.4232 16.1053 15.5567 19.0625 10.9991 19.0625C6.44324 19.0625 2.57857 16.1081 1.21365 12.0133C1.10342 11.6822 1.10342 11.3242 1.21365 10.9931H1.21274ZM15.8125 11.5C15.8125 12.7764 15.3055 14.0004 14.4029 14.903C13.5004 15.8055 12.2763 16.3125 11 16.3125C9.72363 16.3125 8.49956 15.8055 7.59704 14.903C6.69452 14.0004 6.18749 12.7764 6.18749 11.5C6.18749 10.2236 6.69452 8.99957 7.59704 8.09705C8.49956 7.19453 9.72363 6.6875 11 6.6875C12.2763 6.6875 13.5004 7.19453 14.4029 8.09705C15.3055 8.99957 15.8125 10.2236 15.8125 11.5V11.5Z"
+                                                    fill="white" />
+                                            </svg>
+                                            Ознакомиться
+                                        </button>
+
+                                    </div>
+                                </div>
+                                <div class="catalog-docss-svg">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.0901 3.87741C21.2879 4.02673 22.1666 5.13381 22.1666 6.42636V24.5L13.9999 20.1254L5.83325 24.5V6.42636C5.83325 5.13381 6.7109 4.02673 7.90976 3.87741C11.9563 3.3742 16.0436 3.3742 20.0901 3.87741Z"
+                                            fill="#A9B0B8" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="catalog-docss catalog-docss1 d-flex ">
+                                <div>
+                                    <img src="./images/orders/11.svg" alt="">
+                                </div>
+                                <div class="position-relative d-flex align-items-center rrr-div-card">
+                                    <div class="ddd ">
+                                        <p class="catalog-docss-p1">Малый, средний бизнес и стартапы </p>
+                                        <p class="catalog-docss-p2">Договор аренды земельного участка сельско <br>
+                                            хозяйственного
+                                            назначения
+                                        </p>
+                                    </div>
+
+                                    <div class="Resume1">
+                                        <button class="btn btn-primary btn-Resume2" type="button">
+                                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11 14.25C11.7293 14.25 12.4288 13.9603 12.9445 13.4445C13.4603 12.9288 13.75 12.2293 13.75 11.5C13.75 10.7707 13.4603 10.0712 12.9445 9.55546C12.4288 9.03973 11.7293 8.75 11 8.75C10.2707 8.75 9.57118 9.03973 9.05546 9.55546C8.53973 10.0712 8.25 10.7707 8.25 11.5C8.25 12.2293 8.53973 12.9288 9.05546 13.4445C9.57118 13.9603 10.2707 14.25 11 14.25V14.25Z"
+                                                    fill="white" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1.21274 10.9931C2.57674 6.89467 6.44232 3.9375 11.0009 3.9375C15.5567 3.9375 19.4205 6.89192 20.7863 10.9867C20.8963 11.3185 20.8963 11.676 20.7863 12.0069C19.4232 16.1053 15.5567 19.0625 10.9991 19.0625C6.44324 19.0625 2.57857 16.1081 1.21365 12.0133C1.10342 11.6822 1.10342 11.3242 1.21365 10.9931H1.21274ZM15.8125 11.5C15.8125 12.7764 15.3055 14.0004 14.4029 14.903C13.5004 15.8055 12.2763 16.3125 11 16.3125C9.72363 16.3125 8.49956 15.8055 7.59704 14.903C6.69452 14.0004 6.18749 12.7764 6.18749 11.5C6.18749 10.2236 6.69452 8.99957 7.59704 8.09705C8.49956 7.19453 9.72363 6.6875 11 6.6875C12.2763 6.6875 13.5004 7.19453 14.4029 8.09705C15.3055 8.99957 15.8125 10.2236 15.8125 11.5V11.5Z"
+                                                    fill="white" />
+                                            </svg>
+                                            Ознакомиться
+                                        </button>
+
+                                    </div>
+                                </div>
+                                <div class="catalog-docss-svg">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.0901 3.87741C21.2879 4.02673 22.1666 5.13381 22.1666 6.42636V24.5L13.9999 20.1254L5.83325 24.5V6.42636C5.83325 5.13381 6.7109 4.02673 7.90976 3.87741C11.9563 3.3742 16.0436 3.3742 20.0901 3.87741Z"
+                                            fill="#A9B0B8" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="catalog-docss catalog-docss1 d-flex ">
+                                <div>
+                                    <img src="./images/orders/ДокПлитка-2.svg" alt="">
+                                </div>
+                                <div class="position-relative d-flex align-items-center rrr-div-card">
+                                    <div class="ddd ">
+                                        <p class="catalog-docss-p1">Малый, средний бизнес и стартапы </p>
+                                        <p class="catalog-docss-p2">Договор аренды земельного участка сельско <br>
+                                            хозяйственного
+                                            назначения
+                                        </p>
+                                    </div>
+
+                                    <div class="Resume1">
+                                        <button class="btn btn-primary btn-Resume2" type="button">
+                                            <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11 14.25C11.7293 14.25 12.4288 13.9603 12.9445 13.4445C13.4603 12.9288 13.75 12.2293 13.75 11.5C13.75 10.7707 13.4603 10.0712 12.9445 9.55546C12.4288 9.03973 11.7293 8.75 11 8.75C10.2707 8.75 9.57118 9.03973 9.05546 9.55546C8.53973 10.0712 8.25 10.7707 8.25 11.5C8.25 12.2293 8.53973 12.9288 9.05546 13.4445C9.57118 13.9603 10.2707 14.25 11 14.25V14.25Z"
+                                                    fill="white" />
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M1.21274 10.9931C2.57674 6.89467 6.44232 3.9375 11.0009 3.9375C15.5567 3.9375 19.4205 6.89192 20.7863 10.9867C20.8963 11.3185 20.8963 11.676 20.7863 12.0069C19.4232 16.1053 15.5567 19.0625 10.9991 19.0625C6.44324 19.0625 2.57857 16.1081 1.21365 12.0133C1.10342 11.6822 1.10342 11.3242 1.21365 10.9931H1.21274ZM15.8125 11.5C15.8125 12.7764 15.3055 14.0004 14.4029 14.903C13.5004 15.8055 12.2763 16.3125 11 16.3125C9.72363 16.3125 8.49956 15.8055 7.59704 14.903C6.69452 14.0004 6.18749 12.7764 6.18749 11.5C6.18749 10.2236 6.69452 8.99957 7.59704 8.09705C8.49956 7.19453 9.72363 6.6875 11 6.6875C12.2763 6.6875 13.5004 7.19453 14.4029 8.09705C15.3055 8.99957 15.8125 10.2236 15.8125 11.5V11.5Z"
+                                                    fill="white" />
+                                            </svg>
+                                            Ознакомиться
+                                        </button>
+
+                                    </div>
+                                </div>
+                                <div class="catalog-docss-svg">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20.0901 3.87741C21.2879 4.02673 22.1666 5.13381 22.1666 6.42636V24.5L13.9999 20.1254L5.83325 24.5V6.42636C5.83325 5.13381 6.7109 4.02673 7.90976 3.87741C11.9563 3.3742 16.0436 3.3742 20.0901 3.87741Z"
+                                            fill="#A9B0B8" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+            <div></div>
+            <div></div>
+
+
+
+            <button type="button" class="btn btn-light big-btn-catalog">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <path
+                        d="M8 3.875C8 2.839 8.84 2 9.875 2H10.25C11.2446 2 12.1984 2.39509 12.9017 3.09835C13.6049 3.80161 14 4.75544 14 5.75V7.625C14 8.661 14.84 9.5 15.875 9.5H17.75C18.7446 9.5 19.6984 9.89509 20.4017 10.5983C21.1049 11.3016 21.5 12.2554 21.5 13.25V16.625C21.5 17.66 20.66 18.5 19.625 18.5H9.875C9.37772 18.5 8.9008 18.3025 8.54917 17.9508C8.19754 17.5992 8 17.1223 8 16.625V3.875Z"
+                        fill="black" />
+                    <path
+                        d="M15.5 5.75041C15.5018 4.48895 15.0475 3.26937 14.221 2.31641C15.8943 2.75637 17.4207 3.63288 18.6441 4.85629C19.8675 6.07971 20.744 7.60611 21.184 9.27941C20.231 8.45289 19.0115 7.99865 17.75 8.00041H15.875C15.7755 8.00041 15.6802 7.9609 15.6098 7.89057C15.5395 7.82024 15.5 7.72486 15.5 7.62541V5.75041ZM5.375 6.50041H6.5V16.6254C6.5 17.5205 6.85558 18.379 7.48851 19.0119C8.12145 19.6448 8.97989 20.0004 9.875 20.0004H17V21.1254C17 22.1604 16.16 23.0004 15.125 23.0004H5.375C4.87772 23.0004 4.40081 22.8029 4.04917 22.4512C3.69754 22.0996 3.5 21.6227 3.5 21.1254V8.37541C3.5 7.33941 4.34 6.50041 5.375 6.50041Z"
+                        fill="black" />
+                </svg>
+                Показать еще</button>
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <!----------------------------------------- Feedback ------------------------------------>
+    <div class="feedback-catalogOne">
+        <div class="container feedback-cont">
+            <h1>У вас остались вопросы?</h1>
+            <p class="feedback-p">Напишите нам на <b>kpd@garant.ru</b> или заполните форму ниже — будем рады вам помочь!
+            </p>
+            <div class="input-cont flex-lg-row flex-column">
+                <div class="position-relative">
+                    <input type="text" placeholder=" Ваше имя " aria-label="First name"
+                        class="inputs phone-input mb-lg-0 mb-2" style="padding-left: 47px; " />
+
+                    <svg class="position-absolute namee" style="top: 19px;left:25px;" width="18" height="19"
+                        viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 12.6304C10.6088 12.6304 12.0023 12.7641 12.9699 13.1068C13.4486 13.2764 13.7704 13.4792 13.9671 13.6939C14.1484 13.8917 14.25 14.1264 14.25 14.4492C14.25 14.7708 14.1483 15.0034 13.967 15.1994C13.7697 15.4128 13.4467 15.614 12.9662 15.7818C11.9955 16.1209 10.6011 16.25 9 16.25C7.39162 16.25 5.99806 16.1163 5.03041 15.7736C4.55158 15.6041 4.22973 15.4012 4.03294 15.1865C3.85164 14.9887 3.75 14.754 3.75 14.4312C3.75 14.1097 3.85166 13.8771 4.03301 13.681C4.23034 13.4677 4.55333 13.2664 5.0338 13.0986C6.00452 12.7596 7.3989 12.6304 9 12.6304ZM9 2.75C10.7905 2.75 12.2205 4.18008 12.2205 5.96829C12.2205 7.75668 10.7903 9.18733 9 9.18733C7.21038 9.18733 5.77951 7.75659 5.77951 5.96829C5.77951 4.18017 7.21019 2.75 9 2.75Z"
+                            stroke="#77818A" stroke-width="1.5" />
+                    </svg>
+
+                </div>
+                <div class="position-relative">
+                    <input type="text" placeholder="Телефон" aria-label="First name"
+                        class="inputs phone-input mb-lg-0 mb-2" style="padding-left: 50px; " id="ELEMENTI_ID" />
+                    <svg class="phonee position-absolute" style="top: 19px;left:25px;" width="18" height="19"
+                        viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.8137 4.61732C10.4567 4.55136 10.1288 4.77921 10.0608 5.12772C9.99283 5.47623 10.2214 5.8165 10.5687 5.8847C11.6144 6.08856 12.4218 6.898 12.6265 7.94728V7.94803C12.6847 8.25007 12.9507 8.46967 13.2569 8.46967C13.298 8.46967 13.3391 8.46593 13.3809 8.45843C13.7282 8.38873 13.9568 8.04921 13.8888 7.69995C13.5833 6.13278 12.377 4.92236 10.8137 4.61732Z"
+                            fill="#77818A" />
+                        <path
+                            d="M10.7669 2.00595C10.5996 1.98196 10.4315 2.03143 10.2978 2.13786C10.1604 2.24578 10.0745 2.40168 10.0558 2.57631C10.0162 2.92931 10.2709 3.24859 10.6235 3.28832C13.0547 3.55963 14.9444 5.45358 15.2178 7.8924C15.2544 8.21918 15.5285 8.46576 15.8557 8.46576C15.8803 8.46576 15.9042 8.46426 15.9289 8.46126C16.0999 8.44253 16.2523 8.35783 16.3599 8.22293C16.4667 8.08802 16.5152 7.92014 16.4958 7.7485C16.1552 4.70559 13.8002 2.34397 10.7669 2.00595Z"
+                            fill="#77818A" />
+                        <path
+                            d="M13.319 12.194C13.5514 12.4263 13.7711 12.6353 13.9673 12.8219L13.9793 12.8334C14.1817 13.0259 14.3538 13.1899 14.5026 13.3425C14.8137 13.6615 14.9373 13.8483 14.981 13.9804C15.0065 14.0574 15.0267 14.1698 14.8982 14.4211C14.7548 14.7015 14.457 15.0886 13.9017 15.6455C13.8613 15.6819 13.8259 15.7184 13.8093 15.7355C13.8073 15.7376 13.8055 15.7394 13.8041 15.7409L13.802 15.7431C13.7705 15.7753 13.7424 15.8041 13.7091 15.8357C13.6433 15.8984 13.5625 15.9666 13.4606 16.0296C13.267 16.1493 12.9571 16.2754 12.4654 16.2456C11.4367 16.1833 9.51459 15.4293 6.29371 12.2093C3.07244 8.98898 2.31736 7.06649 2.2545 6.03736C2.22445 5.54537 2.35036 5.23533 2.46992 5.0416C2.53284 4.93965 2.60104 4.8589 2.66359 4.79307C2.69527 4.75972 2.72413 4.73152 2.75644 4.69996L2.75829 4.69815C2.75978 4.6967 2.76159 4.69494 2.76371 4.69289C2.78077 4.67633 2.81716 4.64102 2.85342 4.60071C3.41207 4.04386 3.79991 3.74533 4.08065 3.60172C4.33221 3.47304 4.4439 3.49366 4.52 3.51896C4.65161 3.56273 4.83788 3.6865 5.15691 3.99842C5.30941 4.14752 5.47329 4.31981 5.66588 4.52252L5.6701 4.52696C5.85861 4.72537 6.07003 4.94789 6.30561 5.1834C6.67291 5.5506 6.69692 5.76153 6.6937 5.888C6.69137 5.97933 6.67029 6.08894 6.62226 6.24507C6.5983 6.32294 6.57036 6.40411 6.53733 6.49876C6.53405 6.50816 6.53071 6.51772 6.52733 6.52741C6.49795 6.6115 6.46484 6.70626 6.43354 6.80317C6.28919 7.25014 6.15204 7.83227 6.32646 8.54278C6.49693 9.23722 6.93997 9.95634 7.74355 10.7597C8.54711 11.563 9.26632 12.0059 9.9608 12.176C10.6714 12.3501 11.2534 12.2125 11.7002 12.0677C11.7972 12.0363 11.892 12.0031 11.9761 11.9736C11.9857 11.9703 11.9952 11.9669 12.0045 11.9637C12.0991 11.9306 12.1803 11.9025 12.2581 11.8785C12.4142 11.8303 12.5237 11.8092 12.6149 11.8068C12.7411 11.8034 12.9518 11.8271 13.319 12.194ZM13.319 12.194L13.8492 11.6636M13.319 12.194C13.319 12.194 13.3191 12.1941 13.3191 12.1941L13.8492 11.6636M13.8492 11.6636C14.075 11.8893 14.2889 12.0928 14.4862 12.2804C15.8941 13.6196 16.4552 14.1533 14.4144 16.1935L2.30548 4.08796C4.34737 2.04593 4.87876 2.60522 6.2116 4.00803C6.40125 4.20763 6.60711 4.42431 6.83587 4.653C7.68128 5.49817 7.47023 6.10237 7.23547 6.77448C6.94125 7.61678 6.60978 8.56573 8.27381 10.2293C9.93795 11.893 10.8864 11.5607 11.7283 11.2657C12.4 11.0304 13.0039 10.8189 13.8492 11.6636Z"
+                            stroke="#77818A" stroke-width="1.5" />
+                    </svg>
+                </div>
+                <button type="button" class="btn submit btn-primary button-feedback">Заказать звонок</button>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label checkbox-text" for="flexCheckDefault">
+                    Нажимая кнопку, я даю согласие на обработку моих личных данных
+                </label>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------- /Feedback/ ---------------------------------->
+
+
+
+    <!----------------------------------------- Footer -------------------------------------->
+    <footer class="text-center text-lg-start ">
+        <div class="container text-center text-md-start mt-5 footer-cont">
+            <div class="row container  mt-5 row-catalogOne ">
+                <div class="col-12 col-lg-3 mx-auto  footer-row-first" style="margin-right: 200px ;">
+                    <a class="navbar-brand text-dark fs-2 logo-footor" href="#">
+                        <h1 class="logoText1">ДОКУМЕНТ.</h1>
+                        <p class="fw-lighter align-bottom fs-6 logo-smoll-text1">юридические дакументы для бизнеса</p>
+                    </a>
+                    <p class="copyright" style="width: 285px;">
+                        © ООО "НПП "ГАРАНТ-СЕРВИС", 2022
+                        Система Документ выпускается с 1990 года
+                        ИНН: 7718013048
+                    </p>
+                </div>
+                <div class="col-6  col-lg-3 mt-2  mx-auto footer-row footer-col1">
+                    <h6 class="fw-bold mb-4 row-title">
+                        Карта сайта
+                    </h6>
+                    <p class="a-footer">
+                        <a href="#!" class="">Консультация юриста</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="">О нас</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="">Как это работает</a>
+                    </p>
+                </div>
+                <div class="col-6  col-lg-3 mt-2  mx-auto footer-row footer-col ">
+                    <h6 class="fw-bold mb-4 row-title row-title1">
+                        Документы
+                    </h6>
+                    <p>
+                        <a href="#!" class="">Для бизнеса и стартапов</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="">Исковые заявления</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="">Другие документы</a>
+                    </p>
+                </div>
+                <div class="col-6 col-lg-3 mt-2  mx-auto footer-row footer-row-last">
+                    <h6 class=" fw-bold mb-4 row-title row-title1">Контакты</h6>
+                    <p>
+                        <a href="#!" class="phone"> 8 800 775 07 75</a>
+                    </p>
+                    <p class="free-col">
+                        <a href="#!" class="">Звонок бесплатный</a>
+                    </p>
+                    <p style="
+          margin-top: 27px">
+                        <a href="#!" class="">info@konstruktor.ru</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----------------------------------------- /footer/ ------------------------------------>
+
+
+
+
+
+
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog5 modal-dialog-centered">
+          <div class="modal-content modal-content5">
+    
+    
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <div class="modal-body5">
+              <div class="row">
+                <div class="col-lg-7 col-12">
+                  <div class="container modal-body5-container">
+                    <div class="col7-cont">
+                      <div class="col7-text">
+                        <div class="d-flex justify-content-start jj">
+                          <h1 class="">Консультация юриста</h1>
+                        </div>
+                        <p>Мы готовы к задачам любой сложности и защитим ваши активы, где бы они ни находились. У нас есть
+                          опыт ведения споров в различных юрисдикциях </p>
+                      </div>
+                      <div class="form-floating form4 form4-1">
+                        <input type="text" placeholder="Ваше имя" aria-label="First name"
+                          class="inputs-modal4  mb-lg-0 mb-2" style="padding-left: 47px; " />
+                      </div>
+                      <div class="form-floating  form4 form4-2">
+                        <input type="password" placeholder="Телефон" aria-label="First name"
+                          class="inputs-modal4  mb-lg-0 mb-2" style="padding-left: 47px; " />
+                      </div>
+                      <div class="d-flex  btn-modal-div ">
+                        <button class=" btn btn-lg  btn-modal" type="submit">
+                          Перейти к оплате — 450 ₽</button>
+                      </div>
+                      <div class="form-check-modal">
+                        <div>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+    
+                        </div>
+                        <label class="form-check-label checkbox-text-modal4" for="flexCheckDefault4">
+                          Нажимая кнопку, я даю согласие на обработку личных данных </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-12">
+                  <img src="./essssss/Rectangle519.png" alt="">
+                </div>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="dist/app.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        var element = document.getElementById('ELEMENTI_ID');
+        var maskOptions = {
+            mask: '+{7}(000)000-00-00'
+        };
+        var mask = IMask(element, maskOptions);
+    </script>
+</body>
+
+</html>

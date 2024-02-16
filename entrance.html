@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в кабинет</title>
+    <link rel="stylesheet" type="text/css" href="dist/app.css">
+    <link rel="stylesheet" type="text/css" href="dist/registration.css">
+</head>
+
+<body>
+    <!----------------------------------------- header -------------------------------------->
+    <div class="header header-entrance ">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid" style="z-index: 99;">
+                <a class="navbar-brand text-dark fs-2 logo" href="./index.html">
+                    <h1 class="logoText">ДОКУМЕНТ.</h1>
+                    <p class="fw-lighter align-bottom fs-6 logo-smoll-text">юридические документы для бизнеса</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto  mb-lg-0 ">
+      
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark"  href="./catalogOne.html">Наши шаблоны
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark"  href="faq.html">Как это работает</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" >Консультация юриста</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="./tariff.html">Тарифы</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="./aboutUs.html">Узнать больше</a>
+                        </li>
+                        <li>
+      
+                            <div class="d-flex btn-group">
+                                <button type="button"
+                                    class="btn btn-light rounded-pill border border-1 transparentButton user "><img
+                                        src="./images/user.svg" alt="user" />
+                                    <span class="header-btn-p">Кабинет</span>
+                                </button>
+      
+      
+      
+                                <!-- <button type="button" class="btn btn-dark rounded-pill doc1 "><img
+                                        src="./images/документ.svg" alt="doc1" />
+                                    <span class="header-btn-p">Документы</span>
+                                </button> -->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark fs-2 logo" href="./index.html">
+                    <h1 class="logoText">ДОКУМЕНТ.</h1>
+                    <p class="fw-lighter align-bottom fs-6 logo-smoll-text">юридические документы для бизнеса
+                    </p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto  mb-lg-0 ">
+
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="#">Консультация юриста</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="aboutUs.html">О нас</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="aboutUs.html">Команда</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-dark" href="./faq.html">Как это работает</a>
+                        </li>
+                        <li>
+
+                            <div class="d-flex btn-group">
+                                <button type="button"
+                                    class="btn btn-light rounded-pill border border-1 transparentButton user "
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./images/user.svg"
+                                        alt="user" />
+                                    <span class="header-btn-p">Кабинет</span>
+                                </button>
+
+
+
+                                <button type="button" class="btn btn-dark rounded-pill doc1 "><img
+                                        src="./images/документ.svg" alt="doc1" />
+                                    <span class="header-btn-p">Документы</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+    </div>
+
+
+
+    <main style="background-color: #F9FAFA;">
+
+        <div class="container">
+            <div class="d-flex div-btn justify-content-center align-items-center">
+
+                <button class="btn btn-chevron-left2" type="submit">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5 21L10.5 14L17.5 7" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div>
+
+                    <div class="div-entrance">
+                        <div class="container">
+                            <h1 class="">Вход в кабинет</h1>
+                            <p>Создайте профиль, чтобы полноценно <br> пользоваться сервисом</p>
+                            <div class="d-flex flex-column align-items-center ">
+                                <div class="form-floating">
+                                    <input type="text" placeholder=" Электронная почта " aria-label="First name"
+                                        class="inputs  mb-lg-0 mb-2" style="padding-left: 47px; " />
+                                </div>
+                                <div class="form-floating">
+                                    <input type="password" placeholder="Пароль" aria-label="First name"
+                                        class="inputs  mb-lg-0 mb-2" style="padding-left: 47px; " />
+                                </div>
+                                <button class="w-100 btn btn-lg  btn-entrance" type="submit">Войти в кабинет</button>
+                            </div>
+                            <div class=" d-flex ">
+                                <div></div>
+                                <div class="form-check-entrance d-flex" style="gap: 8px;">
+                                    <div>
+                                        <input class="form-check-input form-check-input-1" type="checkbox" value=""
+                                            id="flexCheckDefault">
+
+                                    </div>
+                                    <label class="form-check-label checkbox-text-entrance" for="flexCheckDefault">
+                                        Запомнить меня </label>
+                                </div>
+                                <div class="d-flex ms-auto">
+                                    <a class="a-entrance" href="./reset.html">Забыл пароль</a>
+                                </div>
+                            </div>
+                            <a class="btn btn-outline-dark btn1-entrance" href="./registration.html"
+                                role="button">Зарегистрироваться</a>
+
+                            <!-- <button type="button " class="btn btn-outline-dark btn1-entrance">Зарегистрироваться</button> -->
+
+                            <div class="justify-content-center d-flex">
+                                <a href="./registration.html" style="text-decoration: none;"
+                                    class="mt-1 text-muted p-entrance">Для новых пользователей</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!----------------------------------------- /header/ --------------------------------->
+
+    <!----------------------------------------- Footer ---------------------------------------->
+    <footer class="text-center text-lg-start ">
+        <div class="container text-center text-md-start mt-5 footer-cont">
+            <div class="row container  mt-3 row-entrance ">
+                <div class="col-12 col-lg-3 mx-auto  footer-row-first" style="margin-right: 200px ;">
+                    <a class="navbar-brand text-dark fs-2 logo-footor" href="#">
+                        <h1 class="logoText1">ДОКУМЕНТ.</h1>
+                        <p class="fw-lighter align-bottom fs-6 logo-smoll-text1">юридические дакументы для
+                            бизнеса</p>
+                    </a>
+                    <p class="copyright" style="width: 285px;">
+                        © ООО "НПП "ГАРАНТ-СЕРВИС", 2022
+                        Система Документ выпускается с 1990 года
+                        ИНН: 7718013048
+                    </p>
+                </div>
+                <div class="col-6  col-lg-3 mt-2  mx-auto footer-row footer-col1">
+                    <h6 class="fw-bold mb-4 row-title">
+                        Карта сайта
+                    </h6>
+                    <p class="a-footer">
+                        <a href="#!" class="">Консультация юриста</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="">О нас</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="">Как это работает</a>
+                    </p>
+                </div>
+                <div class="col-6  col-lg-3 mt-2  mx-auto footer-row footer-col ">
+                    <h6 class="fw-bold mb-4 row-title row-title1">
+                        Документы
+                    </h6>
+                    <p>
+                        <a href="#!" class="">Для бизнеса и стартапов</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="">Исковые заявления</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="">Другие документы</a>
+                    </p>
+                </div>
+                <div class="col-6 col-lg-3 mt-2  mx-auto footer-row footer-row-last">
+                    <h6 class=" fw-bold mb-4 row-title row-title1">Контакты</h6>
+                    <p>
+                        <a href="#!" class="phone"> 8 800 775 07 75</a>
+                    </p>
+                    <p class="free-col">
+                        <a href="#!" class="">Звонок бесплатный</a>
+                    </p>
+                    <p style="
+          margin-top: 27px">
+                        <a href="#!" class="">info@konstruktor.ru</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----------------------------------------- /footer/ -------------------------------------->
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog5 modal-dialog-centered">
+          <div class="modal-content modal-content5">
+    
+    
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <div class="modal-body5">
+              <div class="row">
+                <div class="col-lg-7 col-12">
+                  <div class="container modal-body5-container">
+                    <div class="col7-cont">
+                      <div class="col7-text">
+                        <div class="d-flex justify-content-start jj">
+                          <h1 class="">Консультация юриста</h1>
+                        </div>
+                        <p>Мы готовы к задачам любой сложности и защитим ваши активы, где бы они ни находились. У нас есть
+                          опыт ведения споров в различных юрисдикциях </p>
+                      </div>
+                      <div class="form-floating form4 form4-1">
+                        <input type="text" placeholder="Ваше имя" aria-label="First name"
+                          class="inputs-modal4  mb-lg-0 mb-2" style="padding-left: 47px; " />
+                      </div>
+                      <div class="form-floating  form4 form4-2">
+                        <input type="password" placeholder="Телефон" aria-label="First name"
+                          class="inputs-modal4  mb-lg-0 mb-2" style="padding-left: 47px; " />
+                      </div>
+                      <div class="d-flex  btn-modal-div ">
+                        <button class=" btn btn-lg  btn-modal" type="submit">
+                          Перейти к оплате — 450 ₽</button>
+                      </div>
+                      <div class="form-check-modal">
+                        <div>
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+    
+                        </div>
+                        <label class="form-check-label checkbox-text-modal4" for="flexCheckDefault4">
+                          Нажимая кнопку, я даю согласие на обработку личных данных </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-12">
+                  <img src="./essssss/Rectangle519.png" alt="">
+                </div>
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+    <script src="dist/app.js"></script>
+
+</body>
+
+</html>
